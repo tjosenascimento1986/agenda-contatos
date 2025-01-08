@@ -54,7 +54,7 @@ agenda-contatos/
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
+    git clone https://github.com/tjosenascimento1986/agenda-contatos.git
     cd agenda-contatos
     ```
 2.  **Construa e execute os containers com Docker Compose:**
