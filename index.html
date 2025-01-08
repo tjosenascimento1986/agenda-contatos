@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Agenda de Contatos</h1>
+
+    <div id="form-container">
+      <h2>Adicionar/Editar Contato</h2>
+        <form id="contact-form">
+          <input type="hidden" id="id" name="id">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br>
+
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" required><br>
+
+          <label for="telefone_fixo">Telefone Fixo:</label>
+          <input type="text" id="telefone_fixo" name="telefone_fixo"><br>
+
+          <label for="telefone_celular">Telefone Celular:</label>
+          <input type="text" id="telefone_celular" name="telefone_celular"><br>
+
+          <label for="telefone_trabalho">Telefone Trabalho:</label>
+          <input type="text" id="telefone_trabalho" name="telefone_trabalho"><br>
+
+          <label for="email_pessoal">Email Pessoal:</label>
+          <input type="email" id="email_pessoal" name="email_pessoal"><br>
+
+          <label for="email_profissional">Email Profissional:</label>
+          <input type="email" id="email_profissional" name="email_profissional"><br>
+
+          <label for="endereco_residencial">Endereço Residencial:</label>
+          <input type="text" id="endereco_residencial" name="endereco_residencial"><br>
+
+          <label for="endereco_comercial">Endereço Comercial:</label>
+          <input type="text" id="endereco_comercial" name="endereco_comercial"><br>
+
+          <label for="aniversario">Aniversário:</label>
+          <input type="date" id="aniversario" name="aniversario"><br>
+
+          <button type="submit" id="submitButton">Adicionar Contato</button>
+        </form>
+    </div>
+    <div id="contacts-container">
+      <h2>Lista de Contatos</h2>
+      <table id="contacts-table">
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Sobrenome</th>
+                  <th>Telefone Fixo</th>
+                  <th>Telefone Celular</th>
+                  <th>Telefone Trabalho</th>
+                  <th>Email Pessoal</th>
+                  <th>Email Profissional</th>
+                  <th>Endereço Residencial</th>
+                  <th>Endereço Comercial</th>
+                  <th>Aniversário</th>
+                  <th>Ações</th>
+              </tr>
+          </thead>
+          <tbody id="contacts-body"></tbody>
+      </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
